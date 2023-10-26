@@ -6,6 +6,10 @@ authors = ["Kyle Bouwman <kybouw@gmail.com>"]
 license = "Apache 2.0"
 readme = "README.md"
 
+packages = [
+    { include = "budg-flask" }
+]
+
 [tool.poetry.dependencies]
 python = "^3.12"
 Flask = "^3.0.0"

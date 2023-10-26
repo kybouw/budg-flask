@@ -23,11 +23,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with budg.  If not, see <https://www.gnu.org/licenses/gpl.html>.
 """
-import argparse
 import math
 import os
 import re
-import sys
 import tomllib
 from typing import Any
 
