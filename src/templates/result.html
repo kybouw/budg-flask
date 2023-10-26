@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% for line in table_lines %}
+<p>{{line}}</p>
+{% endfor %}
+
+<a href="/"><button>Go back</button></a>
+
+{% endblock %}

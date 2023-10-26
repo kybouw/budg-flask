@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<form action="/calculate" method="get">
+    <label for="plan">Plan (toml):</label>
+    <textarea id="plan" , name="plan"></textarea>
+    <label for="amount">Amount ($):</label>
+    <input type="text" id="amount" name="amount">
+    <input type="submit" value="Calculate">
+</form>
+
+{% endblock %}
