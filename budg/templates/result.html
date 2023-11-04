@@ -2,9 +2,11 @@
 
 {% block body %}
 
+<p>
 {% for line in table_lines %}
-<p>{{line}}</p>
+{{line}}<br>
 {% endfor %}
+</p>
 
 <a href="/"><button>Go back</button></a>
 

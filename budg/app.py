@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-from . import budg
+from budg.core import get_dollar_value, calculate as budg_calculate
 
 app = Flask(__name__)
 
@@ -11,8 +11,8 @@ def index():
 def calculate():
     plan = request.args.get("plan")
     amount = request.args.get("amount")
-    amount_val = budg.get_dollar_value(amount)
-    table = budg.calculate(plan, amount_val)
+    amount_val = get_dollar_value(amount)
+    table = budg_calculate(plan, amount_val)
     table_lines = table.split("\n")
 
     return render_template("result.html", table_lines=table_lines)
